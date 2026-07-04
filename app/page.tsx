@@ -46,11 +46,6 @@ export default function Home() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeSection, setActiveSection] = useState<string>('home');
 
-  // Contact Form State
-  const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-
   useEffect(() => {
     // Generate the front and back badge design on mount using canvas generator
     generateFrontBadge('/pp.jpeg', 'M Farhan Abdillah', 'Web Developer')
@@ -79,17 +74,6 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const handleFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate API request
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setSubmitSuccess(true);
-    setFormState({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setSubmitSuccess(false), 5000);
-  };
 
   const navLinks = [
     { id: 'home', label: 'Home' },
