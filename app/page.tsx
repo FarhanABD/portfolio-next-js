@@ -631,7 +631,7 @@ export default function Home() {
               {/* Social Connect */}
               <div className="glass-card p-6 rounded-2xl border-white/5 flex items-center justify-around">
                 <a
-                  href="#"
+                  href="https://github.com/FarhanABD?tab=repositories"
                   className="h-12 w-12 rounded-xl bg-zinc-900 border border-white/5 hover:border-violet-500/30 flex items-center justify-center text-zinc-400 hover:text-violet-400 hover:scale-105 transition-all duration-300 shadow-md shadow-zinc-950/40"
                   title="GitHub"
                 >
@@ -641,7 +641,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/m-farhan-abdillah-38aa7322b/"
                   className="h-12 w-12 rounded-xl bg-zinc-900 border border-white/5 hover:border-indigo-500/30 flex items-center justify-center text-zinc-400 hover:text-indigo-400 hover:scale-105 transition-all duration-300 shadow-md shadow-zinc-950/40"
                   title="LinkedIn"
                 >
